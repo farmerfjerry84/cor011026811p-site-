@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "COR0110268_11P.Web/1.0.0": {
+        "runtime": {
+          "COR0110268_11P.Web.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "COR0110268_11P.Web/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

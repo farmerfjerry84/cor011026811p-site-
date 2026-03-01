@@ -1,0 +1,89 @@
+﻿@page
+@model dynamic
+@{
+    ViewData["Title"] = "Docs";
+}
+<section class="page-header">
+    <h1>Documentation & Whitepaper</h1>
+    <p>A deep technical and conceptual explanation of COR’s internal governance engine.</p>
+</section>
+
+<section class="content-block">
+    <h2>Governance Engine Model</h2>
+    <p>COR is built on a layered governance architecture that transforms policies, rules, and oversight structures into executable logic. Each layer is independent yet interoperable, enabling domain‑agnostic governance.</p>
+</section>
+
+<section class="content-block">
+    <h2>Policy Model</h2>
+    <p>Policies are represented as structured objects containing conditions, obligations, prohibitions, and exceptions. COR evaluates these objects in real time to enforce governance boundaries.</p>
+</section>
+
+<section class="content-block">
+    <h2>Decision Logic</h2>
+    <p>Decision pathways define who can authorize actions, under what conditions, and with what escalation. COR ensures every decision follows its defined governance path.</p>
+</section>
+
+<section class="content-block">
+    <h2>Workflow Enforcement</h2>
+    <p>Workflows are governed sequences of actions. COR enforces checkpoints, approvals, and compliance gates to ensure processes follow authorized routes.</p>
+</section>
+
+<section class="content-block">
+    <h2>Audit Architecture</h2>
+    <p>Every rule evaluation, decision, and workflow step is recorded in an immutable audit log. This provides transparency, accountability, and regulatory readiness.</p>
+</section>
+
+<section class="content-block">
+    <h2>Integration Model</h2>
+    <p>COR integrates with external systems through APIs, adapters, and event listeners. It observes, governs, and constrains behavior across heterogeneous environments.</p>
+</section>
+
+<section class="content-block">
+    <h2>Architecture Diagram</h2>
+    <pre class="ascii-diagram">
+                 +--------------------------------------+
+                 |          External Systems            |
+                 |  Apps • Services • Data Sources      |
+                 +-----------------+--------------------+
+                                   |
+                                   v
+                         +---------+---------+
+                         |   Integration     |
+                         |       Layer       |
+                         +---------+---------+
+                                   |
+                                   v
+                         +---------+---------+
+                         |    Observation    |
+                         |       Layer       |
+                         +---------+---------+
+                                   |
+                                   v
+        +--------------------------+---------------------------+
+        |                      Engine Core                     |
+        |                                                      |
+        |  +----------------+   +----------------+            |
+        |  |    Policy      |   |    Decision    |            |
+        |  |     Layer      |   |     Layer      |            |
+        |  +----------------+   +----------------+            |
+        |            \                 /                      |
+        |             \               /                       |
+        |              v             v                        |
+        |           +---------------------+                   |
+        |           |    Workflow Layer   |                   |
+        |           +---------------------+                   |
+        +--------------------------+---------------------------+
+                                   |
+                                   v
+                         +---------+---------+
+                         |      Audit        |
+                         |      Layer        |
+                         +---------+---------+
+                                   |
+                                   v
+                         +---------+---------+
+                         |  Reporting &      |
+                         |   Oversight       |
+                         +-------------------+
+    </pre>
+</section>

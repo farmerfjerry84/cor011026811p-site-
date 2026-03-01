@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - COR0110268.11P</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo">cor0110268.11P</div>
+        <nav class="main-nav">
+            <a asp-page="/Index">Home</a>
+            <a asp-page="/About">About</a>
+            <a asp-page="/Engine">Engine</a>
+            <a asp-page="/Modules">Modules</a>
+            <a asp-page="/Domains">Domains</a>
+            <a asp-page="/Architecture">Architecture</a>
+            <a asp-page="/Future">Future</a>
+            <a asp-page="/Pricing">Pricing</a>
+            <a asp-page="/PricingRequest">Request Pricing</a>
+            <a asp-page="/Docs">Docs</a>
+            <a asp-page="/Status">Status</a>
+            <a asp-page="/Contact">Contact</a>
+        </nav>
+    </header>
+
+    <main class="main-body">
+        @RenderBody()
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 COR0110268.11P — Universal Governance Engine. Build 1.0.0.</p>
+    </footer>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

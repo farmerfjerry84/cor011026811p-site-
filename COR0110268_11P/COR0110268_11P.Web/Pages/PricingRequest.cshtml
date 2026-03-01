@@ -1,0 +1,50 @@
+﻿@page
+@model dynamic
+@{
+    ViewData["Title"] = "Request Pricing";
+}
+<section class="page-header">
+    <h1>Request Pricing</h1>
+    <p>For organizations evaluating COR for deployment, submit your requirements below.</p>
+</section>
+
+<section class="content-block">
+    <h2>Request a Formal Quote</h2>
+    <p>Provide your organization’s details and governance requirements. A tailored estimate will be generated based on your selected domain and deployment scale.</p>
+
+    <form class="contact-form">
+        <label>Company Name</label>
+        <input type="text" required />
+
+        <label>Contact Email</label>
+        <input type="email" required />
+
+        <label>Governance Domain</label>
+        <select required>
+            <option value="">Select a domain</option>
+            <option>Defense (Est. $850k – $3.5M)</option>
+            <option>Banking & Finance (Est. $600k – $2.2M)</option>
+            <option>AI Governance (Est. $400k – $1.4M)</option>
+            <option>Corporate Governance (Est. $250k – $900k)</option>
+            <option>IT Governance (Est. $300k – $1.1M)</option>
+            <option>Public Sector (Est. $350k – $1.3M)</option>
+            <option>Multi‑Domain / Custom (Est. $1.2M – $6M+)</option>
+        </select>
+
+        <label>Required Modules</label>
+        <textarea rows="4" placeholder="Policy automation, audit, workflow enforcement, risk scoring, etc." required></textarea>
+
+        <label>Deployment Scale</label>
+        <select required>
+            <option>Pilot (1–2 teams)</option>
+            <option>Department‑level</option>
+            <option>Enterprise‑wide</option>
+            <option>Mission‑critical / national‑scale</option>
+        </select>
+
+        <label>Additional Notes</label>
+        <textarea rows="4"></textarea>
+
+        <button type="submit" class="btn primary">Submit Request</button>
+    </form>
+</section>

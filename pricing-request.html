@@ -1,28 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pricing Request</title>
+    <title>Pricing Inquiry - COR0110268.11P</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Pricing Inquiry Form</h1>
-    <form action="/submit-pricing-request" method="post">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br>
-        <label for="product">Product:</label><br>
-        <select id="product" name="product">
-            <option value="product1">Product 1</option>
-            <option value="product2">Product 2</option>
-            <option value="product3">Product 3</option>
-        </select><br>
-        <label for="quantity">Quantity:</label><br>
-        <input type="number" id="quantity" name="quantity" required><br>
-        <label for="message">Additional Information:</label><br>
-        <textarea id="message" name="message"></textarea><br>
-        <input type="submit" value="Submit">
-    </form>
+    <header class="site-header">
+        <div class="logo">COR0110268.11P</div>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="engine.html">Engine</a>
+            <a href="modules.html">Modules</a>
+            <a href="domains.html">Domains</a>
+            <a href="architecture.html">Architecture</a>
+            <a href="future.html">Future</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="docs.html">Docs</a>
+            <a href="pros-cons.html">Pros &amp; Cons</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="creators.html">Creators</a>
+            <a href="signup.html">Sign Up</a>
+            <a href="status.html">Status</a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="content-section">
+            <h2>Pricing Inquiry</h2>
+            <p>Complete the form below to request a custom pricing quote for COR0110268.11P. A member of our team will respond within 2 business days with a proposal tailored to your organization's scale and requirements.</p>
+            <p>You can also review our <a href="pricing.html">standard pricing tiers</a> before submitting your inquiry.</p>
+
+            <form action="#" method="post">
+                <h3>Contact Information</h3>
+                <label for="name">Full Name *</label><br>
+                <input type="text" id="name" name="name" required placeholder="Jane Smith"><br>
+
+                <label for="email">Business Email *</label><br>
+                <input type="email" id="email" name="email" required placeholder="jane.smith@company.com"><br>
+
+                <label for="phone">Phone Number</label><br>
+                <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000"><br>
+
+                <label for="company">Organization Name *</label><br>
+                <input type="text" id="company" name="company" required placeholder="Acme Corporation"><br>
+
+                <label for="job-title">Job Title *</label><br>
+                <input type="text" id="job-title" name="job-title" required placeholder="Chief Compliance Officer"><br>
+
+                <h3>Deployment Details</h3>
+                <label for="tier">Pricing Tier of Interest *</label><br>
+                <select id="tier" name="tier" required>
+                    <option value="">Select a tier</option>
+                    <option value="starter">Starter — Small teams, single domain ($10,000–$25,000/yr)</option>
+                    <option value="growth">Growth — Mid-market, multi-domain ($25,000–$75,000/yr)</option>
+                    <option value="enterprise">Enterprise — Large organizations, full suite ($75,000–$200,000/yr)</option>
+                    <option value="strategic">Strategic — National-scale, mission-critical ($200,000–$500,000+/yr)</option>
+                    <option value="unsure">Not sure yet — please advise</option>
+                </select><br>
+
+                <label for="modules">Modules Required</label><br>
+                <select id="modules" name="modules" multiple size="5">
+                    <option value="policy">Policy Automation</option>
+                    <option value="decision">Decision Governance</option>
+                    <option value="risk">Risk and Compliance</option>
+                    <option value="audit">Audit and Traceability</option>
+                    <option value="integration">Integration and Data Governance</option>
+                </select><br>
+
+                <label for="scale">Deployment Scale *</label><br>
+                <select id="scale" name="scale" required>
+                    <option value="">Select scale</option>
+                    <option value="pilot">Pilot — 1–2 teams</option>
+                    <option value="department">Department — Single business unit</option>
+                    <option value="enterprise-wide">Enterprise-wide — Multiple domains</option>
+                    <option value="national">National-scale — Multi-region</option>
+                </select><br>
+
+                <label for="timeline">Expected Start Timeline</label><br>
+                <select id="timeline" name="timeline">
+                    <option value="">Select timeline</option>
+                    <option value="immediate">Immediate (within 3 months)</option>
+                    <option value="3-6">3–6 months</option>
+                    <option value="6-12">6–12 months</option>
+                    <option value="planning">Currently planning / evaluating</option>
+                </select><br>
+
+                <h3>Additional Information</h3>
+                <label for="message">Describe your governance requirements or any questions</label><br>
+                <textarea id="message" name="message" rows="5" placeholder="Tell us about your current governance challenges, regulatory obligations, or integration requirements..."></textarea><br>
+
+                <button type="submit">Submit Pricing Inquiry</button>
+            </form>
+
+            <h3>What Happens Next?</h3>
+            <ul>
+                <li><strong>Acknowledgement:</strong> You will receive an email confirmation within 24 hours.</li>
+                <li><strong>Review:</strong> Our team will review your requirements and prepare a tailored proposal.</li>
+                <li><strong>Response:</strong> A governance specialist will contact you within 2 business days.</li>
+                <li><strong>Demo:</strong> We will schedule a personalized product demonstration at your convenience.</li>
+            </ul>
+
+            <p>Need detailed technical information first? Visit our <a href="docs/readme.html">documentation portal</a> or <a href="signup.html">request a consultation</a>.</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 COR0110268.11P. All rights reserved.</p>
+    </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>
